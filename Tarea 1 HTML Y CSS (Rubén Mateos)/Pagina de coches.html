@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web informativa sobre coches: modelos, noticias, videos y más.">
+  <title>SUPERCARS</title>
+  <link rel="stylesheet" href="estilos coches.css">
+  <script>
+    function toggleComparativa() {
+      const tabla = document.getElementById('tablaComparativa');
+      const boton = document.getElementById('botonComparativa');
+      if (tabla.classList.contains('hidden')) {
+        tabla.classList.remove('hidden');
+        boton.textContent = 'Ocultar Comparativa';
+      } else {
+        tabla.classList.add('hidden');
+        boton.textContent = 'Mostrar Comparativa';
+      }
+    }
+
+    function toggleNoticia(id) {
+      const extra = document.getElementById(id);
+      if (extra.style.display === 'none' || extra.style.display === '') {
+        extra.style.display = 'block';
+      } else {
+        extra.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 style="margin-top: 0;">PASION POR LOS COCHES</h1>
+    </div>
+  </header>
+ 
+  <main>
+    <section id="inicio">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#preguntasfrecuentes">Preguntas Frecuentes</a></li>
+        </ul>
+      </nav>
+      <h2>Bienvenidos a Pasión por los coches</h2>
+      <p>Explora el mundo del automovilismo: descubre modelos increíbles, noticias, comparativas y mucho más.</p>
+      <figure>
+        <img src="coches.jpg" alt="Coches deportivos en exhibición" style="width:100%;" style="height: 100%;">
+        <figcaption>Exhibición de coches deportivos</figcaption>
+      </figure>
+    </section>
+ 
+    <section id="modelos">
+        <h2>Modelos Destacados</h2>
+        <article>
+          <h3>Ford Mustang Shelby GT500</h3>
+          <p>Un clásico del músculo americano con potencia y estilo renovado.</p>
+          <img class="car-image" src="Mustang GT500.jpg" alt="Ford Mustang Shelby GT500" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="Ford.png" alt="Ford" style="width:35%;" style="height: 35%;">
+        <article>
+          <h3>Ferrari 488 GTB</h3>
+          <p>Un superdeportivo italiano con aerodinámica avanzada y un motor V8 turbo.</p>
+          <img class="car-image" src="Ferrari 488 GTB.jpg" alt="Ferrari 488 GTB" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="ferrari.png" alt="Ferrari" style="width:25%;" style="height: 25%;">
+        </article>
+        <article>
+          <h3>BMW M4</h3>
+          <p>Diseño elegante y un motor preparado para la pista.</p>
+          <img class="car-image" src="BMW M4.jpg" alt="BMW M4" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="bmw.png" alt="BMW" style="width:25%;" style="height: 25%;">
+        </article>
+        <article>
+          <h3>Chevrolet Corvette C8</h3>
+          <p>El primer Corvette con motor central que combina lujo, rendimiento y diseño moderno.</p>
+          <img class="car-image" src="Z06.jpg" alt="Chevrolet Corvette C8" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="Corvette.png" alt="Chevrolet" style="width:25%;" style="height: 35%;">
+        </article>
+        <article>
+          <h3>Audi S5 Sportback</h3>
+          <p>Un coche deportivo de gama media-alta con tecnología de punta y diseño sofisticado.</p>
+          <img class="car-image" src="Audi S5 Sportback.jpg" alt="Audi S5 Sportback" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="Audi.png" alt="Audi S5" style="width:35%;" style="height: 35%;">
+        </article>
+        <article>
+          <h3>Lamborghini Huracán</h3>
+          <p>Superdeportivo italiano con tracción total y un motor V10 que ruge como ninguno.</p>
+          <img class="car-image" src="Huracan.jpg" alt="Lamborghini Huracán" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="lamborghini.png" alt="Lamborghini Huracán" style="width:25%;" style="height: 25%;">
+        </article>
+        <article>
+          <h3>Mercedes-Benz C-Class</h3>
+          <p>Lujo alemán accesible, con confort y prestaciones equilibradas.</p>
+          <img class="car-image" src="C-CLASS.jpg" alt="Mercedes-Benz C-Class" style="width:50%;" style="height: 50%;">
+          <img class="logo-image" src="Mercedes.png" alt="Mercedes" style="width:35%;" style="height: 35%;">
+        </article>
+
+        <button id="botonComparativa" onclick="toggleComparativa()">Mostrar Comparativa</button>
+      <table id="tablaComparativa" class="hidden">
+        <caption>Comparativa de Modelos</caption>
+          <thead>
+            <tr>
+              <th bgcolor="green">Modelo</th>
+              <th bgcolor="red">Motor</th>
+              <th bgcolor="cyan">Potencia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mustang</td>
+              <td>V8 5.0L</td>
+              <td>450 HP</td>
+            </tr>
+            <tr>
+              <td>Ferrari 488</td>
+              <td>V8 3.9L Biturbo</td>
+              <td>661 HP</td>
+            </tr>
+            <tr>
+              <td>BMW M4</td>
+              <td>6 cilindros en línea</td>
+              <td>503 HP</td>
+            </tr>
+            <tr>
+              <td>Corvette C8</td>
+              <td>V8 6.2L</td>
+              <td>495 HP</td>
+            </tr>
+            <tr>
+              <td>Audi S5</td>
+              <td>V6 3.0L Turbo</td>
+              <td>349 HP</td>
+            </tr>
+            <tr>
+              <td>Lamborghini Huracán</td>
+              <td>V10 5.2L</td>
+              <td>630 HP</td>
+            </tr>
+            <tr>
+              <td>Mercedes C-Class</td>
+              <td>4 cilindros Turbo</td>
+              <td>255 HP</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+ 
+      <section id="noticias">
+        <h2>Últimas Noticias</h2>
+        <article>
+          <h3>Nuevos lanzamientos 2025</h3>
+          <p>Audi y Mercedes anuncian modelos eléctricos revolucionarios.</p>
+          <a href="#" onclick="toggleNoticia('extra1'); return false;">Leer más</a>
+          <div id="extra1" class="noticia-extra">
+            <p>Tanto Audi como Mercedes tienen modelos eléctricos revolucionarios en desarrollo, como el Audi Q8 e-tron, el Mercedes CLA 2025 y el superdeportivo eléctrico de Mercedes-AMG. Los nuevos modelos destacan por su autonomía mejorada, diseño futurista y nuevas tecnologías de asistencia al conductor.</p>
+          </div>
+        </article>
+        <article>
+          <h3>Competencias internacionales</h3>
+          <p>El Gran Premio de Mónaco sorprende en la Fórmula 1.</p>
+          <a href="#" onclick="toggleNoticia('extra2'); return false;">Leer más</a>
+          <div id="extra2" class="noticia-extra">
+            <p>En 2024, el Gran Premio de Mónaco de Fórmula 1 sorprendió con la actuación de Lewis Hamilton, quien lideró la primera sesión de entrenamientos libres, según Estadio Deportivo. 
+              Explicación
+              El Gran Premio de Mónaco es uno de los eventos más destacados de la temporada de Fórmula 1. 
+              El circuito de 3,3 km es muy exigente y el clima es impredecible. 
+              En 2023, Esteban Ocon demostró la importancia de la estrategia y la precisión en medio de los cambios de lluvia. 
+              En ocasiones, pilotos como Max Verstappen y Lewis Hamilton han expresado que el Gran Premio de Mónaco es aburrido. 
+              La FIA ha reconocido que el Gran Premio de Mónaco es aburrido y ha planeado cambios para mejorar la carrera.</p>
+          </div>
+        </article>
+      </section>
+ 
+    <section id="multimedia">
+      <h2>Bugatti Bolide: ¿El Coche Más Rápido del Mundo?</h2>
+      <video controls style="width:100%;">
+        <source src="Bugatti Bolide_ el coche más increíble del mundo.mp4" type="video/mp4">
+      </video>
+    </section>
+ 
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="23@alumnos.fpsumma.es" method="POST" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+ 
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+ 
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+ 
+    <section id="preguntasfrecuentes">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>¿Puedo probar algún coche?</summary>
+        <p>Ofrecemos pruebas de manejo en eventos especiales y ferias automotrices.</p>
+      </details>
+      <details>
+        <summary>¿Hay financiamiento disponible?</summary>
+        <p>Sí, trabajamos con varias entidades para ofrecer opciones de financiamiento.</p>
+      </details>
+      <details>
+        <summary>¿Cómo saber cuál es el coche adecuado para mí?</summary>
+        <p>Nuestros artículos y comparativas te ayudarán a tomar la mejor decisión.</p>
+      </details>
+    </section>
+  </main>
+ 
+  <aside>
+    <h2>Enlaces de Interés</h2>
+    <ul>
+      <li><a href="https://www.topgear.com" target="_blank">Top Gear</a></li>
+      <li><a href="https://www.motortrend.com" target="_blank">MotorTrend</a></li>
+      <li><a href="https://www.caranddriver.com" target="_blank">Car and Driver</a></li>
+    </ul>
+  </aside>
+ 
+  <footer>
+    <p>&copy; 2025 Pasión por los Coches. Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
