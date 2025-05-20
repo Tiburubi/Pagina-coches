@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+
+    <!-- METADATOS DEL CANAL -->
+    <title>Pagina de coches</title>
+    <link></link>
+    <description>Últimas noticias y actualizaciones de Mi Página de Coches.</description>
+    <language>es-es</language>
+    <!-- Fecha de construcción del feed (formato RFC 822) -->
+    <lastBuildDate>Tue, 22 Apr 2025 12:00:00 GMT</lastBuildDate>
+    <!-- Correo del responsable del sitio (opcional) -->
+    <managingEditor>rubenmateosdiazropero@gmail.com</managingEditor>
+
+    <!-- ÍTEM 1 -->
+    <item>
+      <title>Pasion or los coches</title>
+      <link>https://tiburubi.github.io/Pagina-coches/Tarea%201%20HTML%20Y%20CSS%20(Rub%C3%A9n%20Mateos)/</link>
+      <description>Toda la actualidad del mundo motor, nuevos modelos, pruebas, salones del automóvil y mucho más.</description>
+      <pubDate>Tue, 20 May 2025 08:30:00 GMT</pubDate>
+      <guid>https://tiburubi.github.io/Pagina-coches/Tarea%201%20HTML%20Y%20CSS%20(Rub%C3%A9n%20Mateos)/</guid>
+    </item>
+
+    <!-- ÍTEM 2 -->
+    <item>
+      <title>Noticias y novedades de motor</title>
+      <link>hhttps://www.motor.es/noticias/</link>
+      <description>Toda la actualidad del mundo motor, nuevos modelos, pruebas, salones del automóvil y mucho más.</description>
+      <pubDate>Tue, 20 May 2025 12:00:00 GMT</pubDate>
+      <guid>https://www.motor.es/noticias/</guid>
+    </item>
+
+  </channel>
+</rss>
