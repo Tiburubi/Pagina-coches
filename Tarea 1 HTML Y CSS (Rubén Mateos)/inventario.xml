@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE inventario SYSTEM "inventario.dtd">
+<inventario>
+    <coche id="CO001">
+        <marca>Lamborghini</marca>
+        <usuario>Ruben Mateos Diaz Ropero</usuario>
+        <modelo>Huracan Performante</modelo>
+    </coche>
+    <coche id="CO002">
+        <marca>Ferrari</marca>
+        <usuario>Jose Luis Moreno</usuario>
+        <modelo>488 GTB</modelo>
+    </coche>
+    <coche id="CO003">
+        <marca>Ford</marca>
+        <usuario>Luis Diaz</usuario>
+        <modelo>Mustang Shellby</modelo>
+    </coche>
+    <coche id="CO004">
+        <marca>Chevrolet</marca>
+        <usuario>Pedro Guindal</usuario>
+        <modelo>Corevtte C8</modelo>
+    </coche>
+</inventario>

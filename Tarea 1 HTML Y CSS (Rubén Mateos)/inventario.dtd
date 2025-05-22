@@ -1,0 +1,9 @@
+<!-- DTD para el inventario de coches de la empresa -->
+<!ELEMENT inventario (coche+)>
+<!ELEMENT coche (marca, usuario, modelo)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT usuario (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ATTLIST coche
+    id ID #REQUIRED
+>
